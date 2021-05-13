@@ -1,0 +1,60 @@
+<div class="container-fluid">
+  <div class="d-block pt-2">
+    <div class="jumbotron bg-primary mb-2">
+      <div class="row">
+        <div class="d-flex justify-content-between text-center px-2 p-0 m-0 text-white h2">
+          <p class="h4 align-middle m-0 p-0">{{getModel().nickName}}</p>
+
+          <button mat-flat-button class="align-middle btn-secondary" 
+            (click)="onClickLogout()">logout
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-header">
+        Carte de visite
+      </div>
+      <div class="card-body p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 p-0">
+              <div class="image-cropper">
+                <img src="../assets/img/employee.png" alt="avatar" class="profile-pic">
+              </div>
+            </div>
+            <div class="col-9">
+              <span class="h5 d-block">{{getModel().surname}} {{getModel().name}}
+                <button mat-icon-button class="float-right" (click)="editClick()">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </span>
+              <span class="d-flex">
+                <mat-icon class="h6">alternate_email</mat-icon>{{getModel().email}}
+              </span>
+              <span class="d-flex">
+                <mat-icon class="h6">phone_iphone</mat-icon>{{getModel().phoneNumber || 'unkown'}}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-community-profile [admissions]="getModel().admissions" [pendingAdmissions]="getModel().pendingAdmissions">
+    </app-community-profile>
+
+    <span class="d-block h3 mt-3">Mes placements</span>
+
+    <div *ngIf="anchors == null || anchors?.length == 0">
+      <div class="alert alert-primary" role="alert">
+        <p class="text-center mb-0">Vous n'avez rien placé pour le moment. </p>
+        <p class="text-center mb-0"><b>Allez explorer le monde !</b></p>
+      </div>
+    </div>
+    <app-anchor-template [anchor]="anchor" *ngFor="let anchor of anchors"></app-anchor-template>
+
+  </div>
+
+</div>

@@ -1,0 +1,18 @@
+<div>
+    <div class="h4 mt-3">{{category?.name!}}</div>
+
+    <div id="container" class="w-100">
+        <div id="modules">
+            <div *ngIf="category?.items!.length == 0">
+                <div class="alert alert-warning" role="alert">
+                    Nothing to see here for now !
+                  </div>
+            </div>
+            <div *ngFor="let number of category?.items" class="module">
+                <button>
+                    <img src="{{number.image || './assets/img/unkown.png'}}" alt="" (click)="suggestionWasClicked(number.model!)">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

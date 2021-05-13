@@ -1,0 +1,17 @@
+<div class="content">
+    <div *ngIf="step == 1">
+        <div *ngFor="let category of categories">
+            <app-shop-category [category]="category" (onSelectModel)='selectItem($event)'></app-shop-category>
+            <mat-divider></mat-divider>
+        </div>
+    </div>
+
+    <div *ngIf="step == 2">
+        <app-shop-data-completion (onDataCompleted)='endDataCompletion($event)' (onPrevious)='previousStep()' [completionType]="dataType" ></app-shop-data-completion>
+    </div>
+
+    <div *ngIf="step == 3">
+        <app-shop-visibility (onSelectVisibilty)='selectVisibilty($event)' (onPrevious)='previousStep()' [userCommunities]="userCommunities"></app-shop-visibility>
+    </div>
+    
+</div>

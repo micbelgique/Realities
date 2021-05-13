@@ -2,7 +2,7 @@
 
 
 
-## Developpers
+## Developers
 
 * [Hendrick Samuel](https://github.com/HendrickSamuel)
 
@@ -22,9 +22,15 @@ This application was build using:
 
 ### 1. Unity 
 
+In the **Assets > Resources** folder, you'll have to edit the **HIWConfig** file and fill the **SpatialAnchor** file with credentials from the Azure Spatial Anchor web service.
 
+![](img\2021-05-13 094243.png)
 
 ### 2. Angular
+
+In the **Environement ** folder, edit the two environement files to match your apiUrl. 
+
+![2021-05-13 100356](img\2021-05-13 100356.png)
 
 
 

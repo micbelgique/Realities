@@ -1,0 +1,85 @@
+{
+    "categories" : [
+        {
+            "name":"Information",
+            "items":[
+                {"model":"visit-card", "image":"./assets/img/informations/business-card.png"},
+                {"model":"pannel", "image":"./assets/img/informations/poster.png"},
+                {"model":"image", "image":"./assets/img/informations/pictures.png"}
+            ]
+        },
+        {
+            "name":"Sentiment",
+            "items":[
+                {"model":"Angry", "image":"./assets/img/emotions/Angry.png"},
+                {"model":"Haha", "image":"./assets/img/emotions/Haha.png"},
+                {"model":"Like", "image":"./assets/img/emotions/Like.png"},
+                {"model":"Love", "image":"./assets/img/emotions/Love.png"},
+                {"model":"Sad", "image":"./assets/img/emotions/Sad.png"},
+                {"model":"Wow", "image":"./assets/img/emotions/Wow.png"}
+            ]
+        },
+        {
+            "name":"Symboles",
+            "items":[
+                {"model":"arrow16", "image":"./assets/img/quests/arrow16.png"},
+                {"model":"arrow36", "image":"./assets/img/quests/arrow36.png"},
+                {"model":"arrow37", "image":"./assets/img/quests/arrow37.png"},
+                {"model":"arrow48", "image":"./assets/img/quests/arrow48.png"},
+                {"model":"arrow54", "image":"./assets/img/quests/arrow54.png"},
+                {"model":"element01", "image":"./assets/img/quests/element01.png"},
+                {"model":"element03", "image":"./assets/img/quests/element03.png"},
+                {"model":"element05", "image":"./assets/img/quests/element05.png"},
+                {"model":"frame04", "image":"./assets/img/quests/frame04.png"},
+                {"model":"quest14", "image":"./assets/img/quests/quest14.png"},
+                {"model":"quest25", "image":"./assets/img/quests/quest25.png"},
+                {"model":"quest26", "image":"./assets/img/quests/quest26.png"},
+                {"model":"arrow12_right", "image":"./assets/img/quests/arrow12_right.png"},
+                {"model":"arrow12_up", "image":"./assets/img/quests/arrow12_up.png"},
+                {"model":"quest33", "image":"./assets/img/quests/quest33.png"}
+            ]
+        },
+        {
+            "name":"Animaux",
+            "items":[
+                {"model":"Alpaca_LOD2", "image":"./assets/img/animals/Alpaca_LOD2.png"},
+                {"model":"Baboon_LOD0", "image":"./assets/img/animals/Baboon_LOD0.png"},
+                {"model":"Beluga_LOD1", "image":"./assets/img/animals/Beluga_LOD1.png"},
+                {"model":"Cardinal_LOD2", "image":"./assets/img/animals/Cardinal_LOD2.png"},
+                {"model":"Chameleon_LOD2", "image":"./assets/img/animals/Chameleon_LOD2.png"},
+                {"model":"Cougar_LOD0", "image":"./assets/img/animals/Cougar_LOD0.png"},
+                {"model":"Deer_LOD0", "image":"./assets/img/animals/Deer_LOD0.png"},
+                {"model":"Giraffe_LOD0", "image":"./assets/img/animals/Giraffe_LOD0.png"},
+                {"model":"Hamster_LOD0", "image":"./assets/img/animals/Hamster_LOD0.png"},
+                {"model":"Hare_LOD0", "image":"./assets/img/animals/Hare_LOD0.png"},
+                {"model":"Husky_LOD0", "image":"./assets/img/animals/Husky_LOD0.png"},
+                {"model":"Iguana_LOD3", "image":"./assets/img/animals/Iguana_LOD3.png"},
+                {"model":"Lemur_LOD1", "image":"./assets/img/animals/Lemur_LOD1.png"},
+                {"model":"Marten_LOD0", "image":"./assets/img/animals/Marten_LOD0.png"},
+                {"model":"Moose_LOD0", "image":"./assets/img/animals/Moose_LOD0.png"}
+            ]
+        },
+        {
+            "name":"Nature",
+            "items":[
+                {"model":"Bush", "image":"./assets/img/nature/Bush.png"},
+                {"model":"Bush2", "image":"./assets/img/nature/Bush2.png"},
+                {"model":"Flower", "image":"./assets/img/nature/Flower.png"},
+                {"model":"Flower2", "image":"./assets/img/nature/Flower2.png"},
+                {"model":"Grass#2", "image":"./assets/img/nature/Grass-2.png"},
+                {"model":"Grass", "image":"./assets/img/nature/Grass.png"},
+                {"model":"Grass_0027", "image":"./assets/img/nature/Grass_0027.png"},
+                {"model":"Grass_0028", "image":"./assets/img/nature/Grass_0028.png"},
+                {"model":"Grass_0029", "image":"./assets/img/nature/Grass_0029.png"},
+                {"model":"Grass_0030", "image":"./assets/img/nature/Grass_0030.png"},
+                {"model":"Grass_0031", "image":"./assets/img/nature/Grass_0031.png"},
+                {"model":"Grass_0032", "image":"./assets/img/nature/Grass_0032.png"},
+                {"model":"PTree2", "image":"./assets/img/nature/PTree2.png"},
+                {"model":"PTree3", "image":"./assets/img/nature/PTree3.png"},
+                {"model":"Tree5", "image":"./assets/img/nature/Tree5.png"},
+                {"model":"Tree6", "image":"./assets/img/nature/Tree6.png"},
+                {"model":"Tree7", "image":"./assets/img/nature/Tree7.png"}
+            ]
+        }
+    ]
+}

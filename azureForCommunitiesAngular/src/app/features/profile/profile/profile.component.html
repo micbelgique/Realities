@@ -1,0 +1,42 @@
+<app-nav-bar></app-nav-bar>
+  <div>
+    <mat-tab-group mat-align-tabs="center" [selectedIndex]="selectedIndex" (selectedIndexChange)="selectedIndex=$event" >
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon> map</mat-icon>
+                Découverte
+              </ng-template>
+            <app-anchors-discovery></app-anchors-discovery>
+        </mat-tab>
+        
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">account_circle</mat-icon>
+                Profile
+              </ng-template>
+            <app-user-profile [anchors]="userAnchors" [user]="profileService.UserProfile" *ngIf="isUserLoggedIn"></app-user-profile>
+          
+            <div *ngIf="!isUserLoggedIn">
+                <app-authentication></app-authentication>
+            </div>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">chat_bubble</mat-icon>
+                FAQ
+              </ng-template>
+
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt maiores, necessitatibus nemo doloribus corrupti velit nostrum possimus laborum molestias sit. Distinctio molestiae architecto fugit. Magnam consequuntur debitis modi! Placeat impedit dolores iusto! Adipisci vel consequuntur veniam reiciendis quae illum cupiditate exercitationem nisi cum aspernatur? Sint veritatis cupiditate possimus, illum consequatur expedita laborum odio. Cumque eveniet voluptates soluta tenetur ipsam? Reprehenderit, totam culpa? Doloribus sint ea impedit rem odio, nam, laborum unde dolorum eveniet officia iste quis dignissimos, quam dolorem sapiente cumque obcaecati. Numquam tempora sunt saepe voluptates rem exercitationem debitis minima veniam eius a quos recusandae tempore, nostrum odit est cumque inventore, incidunt labore quibusdam iure modi velit. Voluptatum veniam tempora ipsum aspernatur. Consequuntur, vitae ipsum, inventore natus nam, obcaecati rerum hic ipsa illum sequi perspiciatis. Id inventore rem labore amet deleniti et blanditiis ipsa atque natus sed? Vel a quae obcaecati dolore? Error porro, nostrum accusantium, quae itaque necessitatibus eius dolore atque iusto quaerat rem nihil debitis eos facere laboriosam mollitia, alias libero recusandae ex qui aspernatur. Totam eos voluptates velit excepturi voluptas temporibus incidunt quo iusto, debitis hic iure libero suscipit ut, quod eaque, quia natus enim recusandae similique ipsa. Perferendis repudiandae eum reiciendis nisi quam omnis ex iste obcaecati, voluptas mollitia ipsa dolores veniam aperiam assumenda ea porro maxime commodi reprehenderit eius, quis architecto neque. Odit pariatur, facilis consequuntur dolorem ea laudantium harum illo cum minima repudiandae aut sint ab ad. Quaerat laboriosam est dicta saepe placeat, autem aliquid velit deserunt deleniti ipsa esse quasi, veniam optio consequatur, qui quam totam odio quibusdam similique quia aperiam soluta repellendus. Eaque, odio. Repellendus, odit. Magni, at maxime ullam repellat accusantium ratione, minima illo ipsam libero voluptate omnis iusto temporibus dolores eius officiis asperiores ducimus ipsa facilis adipisci. Fuga, voluptas? Explicabo, libero! Consequatur, explicabo totam accusantium deleniti commodi eius quibusdam impedit reprehenderit, nam soluta quidem consequuntur velit dolores ab rerum eum sunt dolorem deserunt nesciunt iste temporibus dolor? Error soluta, cum ut nobis facilis, nostrum illum modi sit molestiae praesentium impedit perferendis reiciendis voluptates dolore beatae fugiat laudantium animi, velit ad dignissimos. Voluptatum doloremque voluptates laudantium placeat minima nobis maiores amet. Possimus optio fugiat et vitae quaerat laborum tempora. Dignissimos distinctio sunt explicabo illum sed adipisci iusto hic aperiam, tenetur unde, culpa similique veniam dolore. Veniam vero quaerat, ea tempore maxime officiis minus, voluptatibus minima obcaecati modi repudiandae iure assumenda voluptates! Magnam nesciunt veritatis, velit cum corrupti sunt aut non quos unde laboriosam beatae doloremque eaque rem soluta dolor eveniet asperiores veniam hic, consequuntur quam eius dolore iste. Repudiandae nisi, ducimus numquam rem ad laboriosam iure odit animi voluptates exercitationem a quos voluptas nobis quaerat temporibus quis, quibusdam tenetur ratione. Porro, modi quibusdam atque totam reiciendis laudantium qui. Perferendis dolorem totam repudiandae accusamus accusantium, ducimus enim vel! Beatae necessitatibus impedit aliquid cumque iusto doloremque maiores ab tempore possimus nisi et, perspiciatis vitae, dicta fuga temporibus molestiae rem animi expedita unde! Ducimus enim quisquam harum dicta similique sunt officia, quia architecto minus esse, molestias dolorum porro delectus, atque dolorem earum recusandae.
+        </mat-tab>
+
+        <mat-tab *ngIf="profileService.UserProfile.role == 'Super_Admin' ">
+          <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">chat_bubble</mat-icon>
+            ADMIN
+          </ng-template>
+          <app-reports-pannel></app-reports-pannel>
+        </mat-tab>
+    </mat-tab-group>    
+</div>
+
+  

@@ -1,0 +1,34 @@
+<div>
+
+    <div *ngIf="getModel()?.length == 0">
+        <div class="alert alert-primary" role="alert">
+            <p class="text-center mb-0">Vous n'avez placé aucun tag pour le moment. </p> <p class="text-center mb-0"><b>Allez explorer le monde !</b></p>
+          </div>
+    </div>
+
+    <div class="card" *ngFor="let placement of getModel()">
+        <div class="card-body">
+            <h2 class="card-title mb-0">
+                {{placement.anchor?.model}}  
+                
+                <span [class.bg-success] = "placement.visibility == 'Public'" [class.bg-danger] = "placement.visibility == 'Private'" [class.bg-secondary] = "placement.visibility == 'Group'" class="badge">
+                    {{placement.visibility}}
+                </span>
+            </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="{{placement.anchor?.pictureUrl || '../assets/img/tag.png'}}" width="40" height="40" alt="screen">
+                    </div>
+                    <div class="col-9">
+                        <p class="card-text">creation: {{placement.anchor?.creationDate | date:'short'}}</p>
+                        <p class="card-text" *ngIf="placement.anchor?.creationDate != placement.anchor?.lastUpdateDate">update: {{placement.anchor?.lastUpdateDate | date:'short'}}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="'/anchorDetail/'placement.anchor.id" class="card-link">Détails</a>
+            <a href="#" class="card-link">Interactions</a>
+        </div>
+    </div>
+</div>

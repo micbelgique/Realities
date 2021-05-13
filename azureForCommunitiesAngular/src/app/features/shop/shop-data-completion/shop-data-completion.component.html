@@ -1,0 +1,28 @@
+<form class="example-form">
+    <div>
+      <mat-form-field class="w-100" *ngIf="completionType == 0">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Some great text !" [(ngModel)]="title" name="title" (change)="onDataComplete()">
+      </mat-form-field>
+  
+      <mat-form-field class="w-100" *ngIf="completionType == 0">
+        <mat-label>Content</mat-label>
+        <textarea matInput placeholder="Tell us more !" style="min-height: 100px; max-height: 250px;" [(ngModel)]="content" name="content" (change)="onDataComplete()"></textarea>
+      </mat-form-field>
+  
+      <mat-form-field class="w-100" *ngIf="completionType == 1">
+          <mat-label>Image Url</mat-label>
+          <input matInput placeholder="https://nerdist.com/wp-content/uploads/2020/07/maxresdefault.jpg" [(ngModel)]="imageUrl" name="imageUrl" (change)="onDataComplete()">
+      </mat-form-field>
+    </div>
+
+    <!--<button mat-flat-button class="bg-primary" (click)="onImageUpload()">image from camera roll</ button>-->
+
+      <app-upload-image-test (onUpload)="onImageUploaded($event)" *ngIf="completionType == 1"></app-upload-image-test>
+
+  </form>
+
+  <div class="d-flex" style="padding-bottom: 250px;">
+    <button mat-raised-button color="primary" class="d-block mx-auto" (click)="previousChoice()"><mat-icon>keyboard_arrow_left</mat-icon>Previous step <mat-icon></mat-icon> </button>
+    <button mat-raised-button color="primary" class="d-block mx-auto" (click)="nextStep()" [disabled]="!isFormComplete">Next step<mat-icon>keyboard_arrow_right</mat-icon></button>
+  </div>

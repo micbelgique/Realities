@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="d-block pt-2">
+      <div class="jumbotron bg-primary mb-2">
+        <div class="d-block mx-auto text-center align-center p-0 m-0 text-white h2 d-flex justify-content-center">
+          <p>{{user?.nickName}}</p>
+        </div>
+      </div>
+
+	  <div class="alert alert-danger" role="alert">
+		<b>Warning !</b> les données suivantes sont considérées comme publiques et seront visibles sur vos cartes de visites posées en mode <b>public</b> 
+	  </div>
+
+      <form id="mainForm" (submit)="onSubmit($event)" class="w-75 d-block mx-auto">
+		<mat-form-field class="mx-auto d-block" appearance="outline">
+			<mat-label>Prénom</mat-label>
+			<input type="text" name="name" [(ngModel)]="user!.name" autocomplete="name" placeholder="" matInput/>
+		</mat-form-field>
+
+		<mat-form-field class="mx-auto d-block" appearance="outline">
+			<mat-label>Nom de famille</mat-label>
+			<input type="text" name="surname" [(ngModel)]="user!.surname" autocomplete="family-name" placeholder="" matInput/>
+		</mat-form-field>
+
+		<mat-form-field class="mx-auto d-block" appearance="outline">
+			<mat-label>Numéro de téléphone</mat-label>
+			<input type="text" name="phoneNumber" [(ngModel)]="user!.phoneNumber" autocomplete="mobile" placeholder="" matInput/>
+			<mat-icon matSuffix>phone</mat-icon>
+		</mat-form-field>
+
+		<mat-form-field class="mx-auto d-block" appearance="outline">
+			<mat-label>Entreprise</mat-label>
+			<input type="text" name="enterprise" [(ngModel)]="user!.enterprise" autocomplete="mission" placeholder="" matInput/>
+		</mat-form-field>
+
+		<mat-form-field class="mx-auto d-block" appearance="outline">
+			<mat-label>Mission</mat-label>
+			<input type="text" name="mission" [(ngModel)]="user!.mission" autocomplete="mission" placeholder="" matInput/>
+		</mat-form-field>
+
+		<mat-form-field class="mx-auto d-block" appearance="outline">
+			<mat-label>Plateforme sociale</mat-label>
+			<input type="text" name="socialMedia" [(ngModel)]="user!.socialMedia" autocomplete="socialMedia" placeholder="" matInput/>
+		</mat-form-field>
+
+		<div class="d-flex justify-content-around">
+			<button type="submit" form="mainForm" mat-flat-button color="primary"> Update </button>
+			<button mat-flat-button class="btn-danger" (click)="onCancel()"> Cancel </button>
+		</div>
+		
+      </form>
+</div>

@@ -1,0 +1,17 @@
+<mat-toolbar class="bg-primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="onPreviousClick()" *ngIf="previousEnabled">
+        <mat-icon class="white-icon">keyboard_arrow_left</mat-icon>
+      </button>
+    <span class="white-icon">Monde Virtuel</span>
+    <span class="example-spacer"></span>
+
+    <!--
+    <button mat-icon-button id="refresh-button" aria-label="Example icon-button with a heart icon" (click)="onRefresh()">
+			<mat-icon class="white-icon">refresh</mat-icon>
+		</button>
+    -->
+    <button mat-flat-button class="basculer-button" (click)="onClick()">
+        basculer        
+        <img src="../assets/icons/ar-basculer_vers_reel.png" alt="">
+    </button>
+  </mat-toolbar>

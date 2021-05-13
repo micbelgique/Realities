@@ -1,0 +1,34 @@
+<app-nav-bar [previousEnabled]="true"></app-nav-bar>
+<div class="container-fluid h-100">
+    <div class="row w-75 mx-auto d-block pt-2">
+        <div class="col-xs-12 col-md-8 col-lg-3">
+            <p class="h2">Créer un groupe</p>
+          
+            <form (submit)="onSubmit($event)">
+                
+                <mat-form-field class="mx-auto d-block">
+                    <mat-label>Nom</mat-label>
+                    <input type="text" name="name" [(ngModel)] = 'CommunityModel!.name' placeholder="" matInput required/>
+                </mat-form-field>
+                <br>
+                
+                <mat-form-field class="mx-auto d-block">
+                    <mat-label>Url pour l'image</mat-label>
+                    <input type="text" name="pictureUrl" [(ngModel)] = 'CommunityModel!.pictureUrl' placeholder="" matInput/>
+                    <mat-icon matSuffix>language</mat-icon>
+                </mat-form-field>
+                <br>
+                
+                <mat-form-field class="mx-auto d-block">
+                    <mat-label>Site web</mat-label>
+                    <input type="text" name="infoUrl" [(ngModel)] = 'CommunityModel!.infoUrl' placeholder="" matInput/>
+                    <mat-icon matSuffix>crop_original</mat-icon>
+                </mat-form-field>
+                <br>
+                
+                <br>
+                <button type="submit" mat-raised-button color="accent">Valider</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<app-heat-map [userPosition]="userPosition" [anchors]="anchorsForYou" class="map-container">
+
+</app-heat-map>
+
+<mat-divider></mat-divider>
+
+<h2 class="align-middle py-1 m-0">Points à proximité</h2>
+
+<div *ngIf="isUserLocated">
+    <div *ngIf="anchorsNearYou == null || anchorsNearYou.length == 0">
+        <div class="alert alert-warning mx-3 text-center" role="alert">
+            Nous n'avons rien trouvé pour vous à proximité
+          </div>
+    </div>
+    <app-anchor-template  [anchor]="anchor" *ngFor="let anchor of anchorsNearYou"></app-anchor-template>
+</div>
+
+<div *ngIf="!isUserLocated">
+    <div class="alert alert-warning mx-3 text-center" role="alert">
+        Nous n'avons pu accéder à votre <b>localisation</b>, pensez à l'activer !
+      </div>
+</div>

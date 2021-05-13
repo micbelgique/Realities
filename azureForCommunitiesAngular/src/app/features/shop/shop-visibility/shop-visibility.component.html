@@ -1,0 +1,32 @@
+<h2>Visibility</h2>
+
+<mat-form-field appearance="fill" class="d-block mx-auto w-75">
+<mat-label>Select an option</mat-label>
+<mat-select [(value)]="selectedVisibility">
+    <mat-option value="0">Private</mat-option>
+    <mat-option value="1" *ngIf="userCommunities!.length > 0">Group</mat-option>
+    <mat-option value="2">Public</mat-option>
+</mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="fill" *ngIf="selectedVisibility === '1'  && userCommunities!.length > 0" class="d-block mx-auto w-75">
+    <mat-label>Select a community (required)</mat-label>
+    <mat-select [(value)]="selectedCommunity" required>
+        <mat-option value="-1">none</mat-option>
+        <mat-option value="community.id" *ngFor="let community of userCommunities">{{community.name}}</mat-option>
+    </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="fill" *ngIf="selectedVisibility === '2' && userCommunities!.length > 0" class="d-block mx-auto w-75">
+    <mat-label>Select a community (optional)</mat-label>
+    <mat-select [(value)]="selectedCommunity">
+        <mat-option value="-1">none</mat-option>
+        <mat-option value="community.id" *ngFor="let community of userCommunities">{{community.name}}</mat-option>
+    </mat-select>
+</mat-form-field>
+
+<div class="d-flex">
+    <button mat-raised-button color="primary" class="d-block mx-auto" (click)="previousChoice()"><mat-icon>keyboard_arrow_left</mat-icon>Previous step <mat-icon></mat-icon> </button>
+    <button mat-raised-button color="primary" class="d-block mx-auto" (click)="endChoice()">Next step<mat-icon>keyboard_arrow_right</mat-icon></button>
+</div>
+

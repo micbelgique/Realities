@@ -1,0 +1,33 @@
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+:host ::ng-deep .mat-toolbar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index:100000;
+}
+
+:host ::ng-deep .mat-tab-body-content {
+    height: auto !important;
+}
+
+.white-icon {
+    color: white;
+    font-weight: lighter;
+}
+
+.basculer-button{
+    color:white;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: lighter;
+    font-size: medium;
+    padding-right: 0;
+}
+
+.basculer-button img{
+    width: 35px;
+    margin-left: 0.5em;
+}

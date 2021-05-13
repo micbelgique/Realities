@@ -1,0 +1,32 @@
+<div class="container">
+        <div class="alert alert-success" role="alert" *ngIf="hasBeenDeleted">
+            Tag has been deleted
+        </div>
+
+        <div *ngIf="!hasBeenDeleted">
+          <div class="container">
+            <h2>Interactions</h2>
+                    
+            <app-interaction-chat [interactions]="anchor?.interactions!" ></app-interaction-chat>
+          </div>
+
+        <div class="container mt-2" *ngIf="isLoggedIn">
+            <h2 class="h2 mb-0 ">Laisser un nouveau message</h2>
+            <mat-form-field class="w-100 pb-0 mt-0" appearance="outline">
+              <mat-label>Content</mat-label>
+              <textarea matInput placeholder="Tell us more !" style="min-height: 100px; max-height: 250px;" [(ngModel)]="content" name="content"></textarea>
+            </mat-form-field>
+            <button mat-flat-button class="btn-success mb-4" (click)="onClick()">Envoyer</button>
+            <div style="padding-bottom: 250px;"></div>
+        </div>
+      </div>
+
+
+        <div class="d-flex justify-content-around fixed-bottom pb-1 bg-white">
+            <button mat-flat-button class="bg-primary" (click)="onDetails()" *ngIf="!hasBeenDeleted">Details</button>
+            <button mat-flat-button class="bg-danger" (click)="onDelete()" *ngIf="isOwner && !hasBeenDeleted">Delete</button>
+            <button mat-flat-button class="bg-warning" (click)="onCancel()">Cancel</button>
+        </div>
+      
+        
+</div>

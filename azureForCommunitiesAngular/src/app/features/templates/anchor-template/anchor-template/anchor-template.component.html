@@ -1,0 +1,27 @@
+<div class="card px-3 py-2 my-2">
+    <div class="card-body p-0 m-0">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-3 p-0">
+                  <img src="{{anchor.pictureUrl || '../assets/img/unkown.png'}}" alt=""  class="myimg"  >
+              </div>
+              <div class="col-9">
+
+                    <div class="d-block">
+                        <h2 class="my-0 d-inline align-center mr-2">{{anchor?.userName || 'unkown user'}}</h2> 
+                        <span [class.bg-success] = "anchor.visibility == 'Public'" [class.bg-danger] = "anchor.visibility == 'Private'" [class.bg-secondary] = "anchor.visibility == 'Group'" class="badge d-inline align-center my-auto">
+                            {{anchor.visibility}}
+                        </span>
+                    </div>
+
+                  
+                  <p class="mb-0">{{anchor.address}}</p>
+                  <p class="mb-0">{{anchor.creationDate | date:'dd/MM/YYYY HH:mm'}}</p>
+
+                  <a routerLink="/anchorDetail/{{anchor.identifier}}" class="card-link">Détails</a>
+              </div>
+              
+          </div>
+      </div>
+    </div>
+  </div>

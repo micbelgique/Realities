@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Report</h1>
+<div mat-dialog-content>
+
+    <mat-form-field class="w-100">
+        <mat-label>Reason to report</mat-label>
+        <textarea matInput placeholder="Tell us why !" style="min-height: 100px; max-height: 250px;" [(ngModel)]="createReportModel.reason" name="reason"></textarea>
+    </mat-form-field>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial>Retour</button>
+  <button mat-button class="btn-success" (click)="onReport()" >Report</button>
+</div>

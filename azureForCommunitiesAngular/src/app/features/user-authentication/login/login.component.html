@@ -1,0 +1,36 @@
+<div class="container-fluid h-100">
+    <div class="row w-75 mx-auto d-block pt-5">
+        <div class="col-xs-12 col-md-8 col-lg-3">
+            <p class="h1">login</p>
+            <a href="/register" class="link-info fs-6" (click)="onActionChangedClicked($event)">I don't have an account</a>
+
+            <div *ngIf="LoginService.errorMessage != '' || LoginService.errorMessage != undefined" style="color:red">
+                {{LoginService.errorMessage}}
+            </div>
+            <div *ngIf="LoginService.succesMessage != '' || LoginService.succesMessage != undefined" style="color:green">
+                {{LoginService.succesMessage}}
+            </div>
+            <br>
+            
+            <form (submit)="onSubmit($event)">
+                <mat-form-field class="mx-auto d-block" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input type="text" name="email" [(ngModel)] = 'getModel().email' autocomplete="email" placeholder="Ex. johnDoe@gmail.com" matInput/>
+                </mat-form-field>
+            
+                <br>
+            
+               <mat-form-field appearance="outline">
+                    <mat-label>Enter your password</mat-label>
+                    <input matInput [type]="visibility ? 'text' : 'password'" autocomplete="current-password" name="password" [(ngModel)] = 'getModel().password' placeholder="Ex. *********" matInput/>
+                    <button type="button" mat-icon-button matSuffix (click)="changeVisibility()" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="visibility">
+                      <mat-icon>{{visibility ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+
+                <br>
+                <button type="submit" mat-raised-button color="accent">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

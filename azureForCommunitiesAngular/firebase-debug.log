@@ -1,0 +1,21 @@
+[debug] [2021-05-03T07:38:06.433Z] ----------------------------------------------------------------------
+[debug] [2021-05-03T07:38:06.435Z] Command:       D:\Node\node.exe C:\Users\hydro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-03T07:38:06.435Z] CLI Version:   9.10.0
+[debug] [2021-05-03T07:38:06.435Z] Platform:      win32
+[debug] [2021-05-03T07:38:06.435Z] Node Version:  v14.16.1
+[debug] [2021-05-03T07:38:06.436Z] Time:          Mon May 03 2021 09:38:06 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2021-05-03T07:38:06.436Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-03T07:38:06.440Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-03T07:38:06.441Z] > authorizing via signed-in user (hydrobladee@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\azureForCommunitiesAngular
+

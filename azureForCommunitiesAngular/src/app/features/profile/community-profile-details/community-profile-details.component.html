@@ -1,0 +1,90 @@
+<mat-toolbar>
+    <div class="my-auto">
+        <button mat-icon-button (click)="onBackClick()">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+    </div>
+    <span class="my-auto"><p class="text-center my-auto h2">{{CommunityModel?.name}}</p></span>
+</mat-toolbar>
+
+
+<mat-tab-group mat-align-tabs="center">
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">account_circle</mat-icon>
+            Members
+        </ng-template>
+
+        <div class="container">
+            <div class="fixed-bottom">
+                <div class="d-flex justify-content-end">
+                
+                    <div class="mr-2 mb-2">
+                        <button mat-fab color="warn" (click)="onClick()">
+                            <mat-icon>add</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+                
+            <mat-list role="list">
+                <div mat-subheader>Admissions</div>
+        
+                <div *ngIf="isAdmissionsLoading; else AdmissionLoaded"><mat-progress-bar mode="indeterminate"></mat-progress-bar></div>
+                <ng-template #AdmissionLoaded>
+                    <div *ngIf="CommunityModel?.admissions == null || CommunityModel?.admissionsUsers!.length < 1">
+                        <div class="alert alert-success" role="alert">
+                            You have no pending Admission ! 
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3" *ngFor="let admission of CommunityModel?.admissionsUsers">
+                        <div class="d-inline-block">
+                            <span [class.bg-success] = "admission.role! == 'Creator'" [class.bg-secondary] = "admission.role! == 'Member'" class="badge">
+                                {{admission.role!}} 
+                            </span>
+                            <span class="my-auto d-flex align-middle">{{admission.nickName}}</span>
+                        </div>
+                    </div>
+                </ng-template>
+            </mat-list>
+        
+            <mat-divider class="mt-2 mb-2"></mat-divider>
+        
+            <mat-list role="list">
+                <div mat-subheader>Pending Admissions</div>
+        
+                <div *ngIf="isPendingAdmissionsLoading; else PendingAdmissionLoaded"><mat-progress-bar mode="indeterminate"></mat-progress-bar></div>
+                <ng-template #PendingAdmissionLoaded>   
+                    <div *ngIf="CommunityModel?.pendingAdmissionsUsers == null || CommunityModel?.pendingAdmissionsUsers!.length < 1">
+                        <div class="alert alert-success" role="alert">
+                            You have no pending Admission ! 
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between" *ngFor="let admission of CommunityModel?.pendingAdmissionsUsers">
+                        <span class="my-auto">User Name :  {{admission.nickName}}</span>
+                    </div>
+                </ng-template>
+            </mat-list>     
+        </div>        
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">loyalty</mat-icon>
+            Tags
+            </ng-template>
+
+        <div class="container">
+            <mat-list>
+
+                <div *ngIf="anchors == null || anchors?.length == 0">
+                    <div class="alert alert-primary" role="alert">
+                        <p class="text-center mb-0">Personne n'a rien placé pour le moment.</p> <p class="text-center mb-0"><b>Va explorer le monde !</b></p>
+                      </div>
+                </div>
+    
+                <app-anchor-template [anchor]="anchor" *ngFor="let anchor of anchors">
+                </app-anchor-template>
+            </mat-list>
+        </div>
+    </mat-tab>
+</mat-tab-group>    

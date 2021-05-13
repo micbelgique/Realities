@@ -1,0 +1,8 @@
+#refresh-button{
+    background-color: rgba(169, 169, 169, 0.26);
+}
+
+.example-spacer {
+    display: flex;
+    justify-content: space-between;
+}   

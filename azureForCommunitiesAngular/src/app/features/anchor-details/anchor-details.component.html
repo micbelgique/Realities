@@ -1,0 +1,29 @@
+<app-nav-bar [previousEnabled]="true" ></app-nav-bar>
+<div class="container">
+  <div class="text-center">
+    <div class="mt-2 h2">par: {{UserProfile?.nickName || 'unkown'}}</div>
+  </div>
+
+  <p>placé le: {{Anchor?.creationDate | date:'dd/MM/YYYY HH:mm'}}</p>
+  <p *ngIf="Anchor?.creationDate != Anchor?.lastUpdateDate">mis à jour le: {{Anchor?.lastUpdateDate | date:'dd/MM/YYYY HH:mm'}}</p>
+  <p>localisation: {{Anchor?.address}}</p>
+  <p>model: {{Anchor?.model}}</p>
+  <p>visible en mode: {{Anchor?.visibility}}</p>
+
+  <img src="{{Anchor?.pictureUrl}}" alt="Picture of the anchor" style="max-width:100%" *ngIf="Anchor?.pictureUrl">
+  <br>
+  <button mat-flat-button class="btn-warning mb-4" (click)="onReportClick()" *ngIf="isUserLoggedIn">Report</button>
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div class="container">
+  <h2>Interactions</h2>
+
+  
+
+  <app-interaction-chat [interactions]="Anchor?.interactions!" ></app-interaction-chat>
+</div>
+
+<mat-divider></mat-divider>
