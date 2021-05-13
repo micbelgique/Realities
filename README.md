@@ -5,6 +5,7 @@
 ## Developers
 
 * [Hendrick Samuel](https://github.com/HendrickSamuel)
+* Loic Anciaux
 
 
 
