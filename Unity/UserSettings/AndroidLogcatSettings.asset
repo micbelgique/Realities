@@ -1,0 +1,269 @@
+{
+    "m_SelectedDeviceId": "e46af100",
+    "m_SelectedPackage": {
+        "deviceId": "e46af100",
+        "name": "com.MicrosoftInnovationCenter.AR_Cards_and_others",
+        "processId": 25909,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.huawei.android.launcher",
+            "processId": 2252,
+            "exited": false
+        },
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 12024,
+            "exited": true
+        },
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 16285,
+            "exited": true
+        },
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 16847,
+            "exited": true
+        },
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 18821,
+            "exited": true
+        },
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 22051,
+            "exited": true
+        },
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 22642,
+            "exited": false
+        },
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 6765,
+            "exited": false
+        },
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 8225,
+            "exited": false
+        },
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 19534,
+            "exited": false
+        },
+        {
+            "deviceId": "9WV7N18C11000367",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 23669,
+            "exited": false
+        },
+        {
+            "deviceId": "192.168.1.219:5555",
+            "name": "com.huawei.android.launcher",
+            "processId": 1867,
+            "exited": false
+        },
+        {
+            "deviceId": "192.168.1.219:5555",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 11493,
+            "exited": false
+        },
+        {
+            "deviceId": "192.168.1.219:5555",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 19534,
+            "exited": false
+        },
+        {
+            "deviceId": "192.168.1.219:5555",
+            "name": "com.microsoft.azure.spatialanchors.examples.unity.helloar",
+            "processId": 23312,
+            "exited": false
+        },
+        {
+            "deviceId": "e46af100",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards_and_others",
+            "processId": 13920,
+            "exited": true
+        },
+        {
+            "deviceId": "e46af100",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards_and_others",
+            "processId": 15967,
+            "exited": true
+        },
+        {
+            "deviceId": "e46af100",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards_and_others",
+            "processId": 18742,
+            "exited": true
+        },
+        {
+            "deviceId": "e46af100",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards_and_others",
+            "processId": 19750,
+            "exited": true
+        },
+        {
+            "deviceId": "e46af100",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards_and_others",
+            "processId": 24131,
+            "exited": true
+        },
+        {
+            "deviceId": "e46af100",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards_and_others",
+            "processId": 24957,
+            "exited": false
+        },
+        {
+            "deviceId": "e46af100",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards_and_others",
+            "processId": 25909,
+            "exited": false
+        },
+        {
+            "deviceId": "R58N51F5JDD",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards",
+            "processId": 20008,
+            "exited": true
+        },
+        {
+            "deviceId": "R58N51F5JDD",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards",
+            "processId": 3897,
+            "exited": true
+        },
+        {
+            "deviceId": "R58N51F5JDD",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards",
+            "processId": 17574,
+            "exited": true
+        },
+        {
+            "deviceId": "R58N51F5JDD",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards",
+            "processId": 6725,
+            "exited": true
+        },
+        {
+            "deviceId": "R58N51F5JDD",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards",
+            "processId": 11797,
+            "exited": true
+        },
+        {
+            "deviceId": "R58N51F5JDD",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards",
+            "processId": 28051,
+            "exited": false
+        },
+        {
+            "deviceId": "2bbdc00f0a017ece",
+            "name": "com.mic.AR_business_card",
+            "processId": 11023,
+            "exited": true
+        },
+        {
+            "deviceId": "2bbdc00f0a017ece",
+            "name": "com.mic.AR_business_card",
+            "processId": 17946,
+            "exited": true
+        },
+        {
+            "deviceId": "2bbdc00f0a017ece",
+            "name": "com.sec.android.app.launcher",
+            "processId": 1866,
+            "exited": false
+        },
+        {
+            "deviceId": "2bbdc00f0a017ece",
+            "name": "com.mic.AR_business_card",
+            "processId": 19443,
+            "exited": true
+        },
+        {
+            "deviceId": "2bbdc00f0a017ece",
+            "name": "com.mic.AR_business_card",
+            "processId": 21757,
+            "exited": true
+        },
+        {
+            "deviceId": "2bbdc00f0a017ece",
+            "name": "com.MicrosoftInnovationCenter.AR_Cards",
+            "processId": 23570,
+            "exited": true
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
